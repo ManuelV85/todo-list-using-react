@@ -10,3 +10,27 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+body{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+#container{
+    width: 500px;
+    height: 600px;
+    background-color: gray;
+}
+
+#input{
+    width: 500px;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: -12px;
+    border: none;
+   
+    
+}
+
