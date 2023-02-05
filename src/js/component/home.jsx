@@ -21,9 +21,10 @@ const Home = () => {
       <h1>TODO LIST</h1>
       <h3>Add New Task</h3>
       <br />
-      
-      <input type="text" placeholder="Add New Task..." onKeyDown={e=>newTask(e)}/>
+      <p>
+      <input id="newTask" type="text" placeholder="Add New Task..." onKeyDown={e=>newTask(e)}/>
       {task.map((task) =>{return <h3>{task}</h3>})}
+      </p>
       <br />
       <br />
 
@@ -37,7 +38,7 @@ const Home = () => {
       </ul>
 
       <h2>Complete</h2>
-      <ul id="completeTask">
+      <ul id="completedTask">
         <li><input type="checkbox" checked /> <label>Go to Doctor</label><input type="text" /><button className="edit">Edit</button>
         <button className="delete">Delete</button></li>
       </ul>
