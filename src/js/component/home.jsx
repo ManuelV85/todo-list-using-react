@@ -1,10 +1,10 @@
 import React from "react";
 import { useEffect, useState } from "react";
 
-//include images into your bundle
-//import rigoImage from "../../img/rigo-baby.jpg";
 
-//create your first component
+// Add into array ->concat
+//Delete from array -> filter
+//Update -> map
 
 
 const Home = ()=>{
@@ -21,13 +21,23 @@ const Home = ()=>{
           onKeyDown = {(e) =>{
             if (e.key === 'Enter'){
               setTodos(todos.concat(inputValue))
+              setInputValue(" ");
             }}
           } 
-            placeholder= "Add New Task..."/>
+            placeholder= "Add New Task..."></input>
         </li>
-        {todos.map((t) => (
+        {todos.map((item, index) => (
           <li>
-            {t} <i class="fa-regular fa-trash-can"></i>
+            {item}{""} 
+            <i class="fa-regular fa-trash-can"
+              onClick={()=>
+                setTodos(todos.filter(
+                  (t,currentIndex) => index != currentIndex
+                ))
+
+              }
+                        
+              ></i>
           </li>
         ))}
       </ul>
