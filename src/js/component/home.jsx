@@ -28,8 +28,8 @@ const Home = ()=>{
         </li>
         {todos.map((item, index) => (
           <li>
-            {item}{""} 
-            <i class="fa-regular fa-trash-can"
+            {item}{" "} 
+            <i id="trahCan" class="fa-regular fa-trash-can"
               onClick={()=>
                 setTodos(todos.filter(
                   (t,currentIndex) => index != currentIndex
@@ -41,7 +41,7 @@ const Home = ()=>{
           </li>
         ))}
       </ul>
-      <div>37 task</div>
+      <div> {todos.length} task</div>
     </div>
   )
 
