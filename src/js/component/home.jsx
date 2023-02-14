@@ -6,6 +6,36 @@ import { useEffect, useState } from "react";
 
 //create your first component
 
+
+const Home = ()=>{
+  const [inputValue, setInputValue] = useState("")
+
+
+  return (
+
+    <div id="principal" className="Container">
+      <h1> TODO LIST</h1>
+      <ul>
+        <li> 
+          <input type="text" 
+          placeholder="Add New Task..."
+          onChange={(e)=> setInputValue(e.target.value)}
+          value={inputValue}></input>
+        </li>
+        <li> Go to the doctor <i class="fa-regular fa-trash-can"></i></li>
+        <li>go to shopping <i class="fa-regular fa-trash-can"></i></li>
+      </ul>
+      <div>45 task</div>
+    </div>
+  );
+};
+
+
+
+
+
+
+/*
 const Home = () => {
   const [task, setTask] = useState([])
   const newTask = (e) =>{
@@ -19,17 +49,18 @@ const Home = () => {
   return (
     <div className="container">
       <h1>TODO LIST</h1>
+
       <h3>Add New Task</h3>
+
       <br />
-      <p>
+      <ul>
+      <li>
       <input id="newTask" type="text" placeholder="Add New Task..." onKeyDown={e=>newTask(e)}/>
       {task.map((task) =>{return <h3>{task}</h3>})}
-      </p>
-      <br />
-      <br />
-
+      </li>
 
       <h2>TODO</h2>
+      </ul>
       <ul id="incompleteTask">
         <li><input type="checkbox" /><label>Pay Bills</label><input type="text" /><button className="edit">Edit</button>
         <button className="delete">Delete</button></li>
@@ -49,7 +80,7 @@ const Home = () => {
   
 }
 
-
+*/
 
 
 

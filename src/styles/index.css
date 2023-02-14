@@ -12,6 +12,39 @@
 */
 
 body{
+    
+    margin-top:  100px;
+    background: white;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: whitesmoke;
+   
+    
+ }
+ #principal{
+    width: 500px;
+    height: auto;
+ }
+ ul{
+    padding: 0;
+    margin-bottom: 0;
+ }
+
+ ul li{
+    border: 1px solid gray;
+    list-style: none;
+    padding: 5px;
+ }
+h1 {
+    text-align: center;
+}
+input{
+    border: none;
+    width: 100%;
+}
+
+/*
+body{
    background: white;
    color: black;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -68,7 +101,7 @@ button :hover{
     color: gray;
 }
 
-/*heading*/
+
 h3, lable[for ='newTask']{
     color: black;
     font-weight: 700;
@@ -101,7 +134,7 @@ input#newTask{
     width: 380px;
 }
 
-/*task list*/
+
 
 li{
     overflow: hidden;
@@ -112,7 +145,7 @@ li{
 li > input[type="checkbox"]{
     margin: 0 10px;
     position: relative;
-    top: 15px;  /*movio los checkbox*/
+    top: 15px;  
 }
 
 li > label{
@@ -128,20 +161,20 @@ li > .delete:hover {
     color: red;
 }
 
-/*complete task*/
+
 #completedTask label{
     text-decoration: line-through;
 }
 
-/*edit task*/
+
 ul li input[type="text"]{
     display: none;
 }
-ul li.editMode label{    /*revisar li.editMode*/
+ul li.editMode label{    
     display: none;
 }
 
-ul li.editMode input[type="text"]{    /*revisar li.editMode*/
+ul li.editMode input[type="text"]{   
     display: block;
 }
-
+*/
