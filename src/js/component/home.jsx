@@ -21,7 +21,7 @@ const Home = ()=>{
           onKeyDown = {(e) =>{
             if (e.key === 'Enter'){
               setTodos(todos.concat(inputValue))
-              setInputValue(" ");
+              setInputValue("");
             }}
           } 
             placeholder= "Add New Task..."></input>
